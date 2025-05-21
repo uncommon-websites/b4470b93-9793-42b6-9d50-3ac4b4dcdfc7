@@ -11,12 +11,19 @@
 </script>
 
 <Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="/sample.png"
-	generating
+  centered={true}
+  title="Work that moves as fast as you do."
+  subtitle="A beautifully designed platform that automates busywork so teams can focus on what matters."
+  imageSrc="/generated/image-a-diverse-group-of-business-professional.webp"
 />
-<LogoScroller label="" generating />
+<LogoScroller
+	label="Trusted by industry leaders"
+	logoUrls={[
+		'https://logo.clearbit.com/unitedhealthgroup.com',
+		'https://logo.clearbit.com/google.com',
+		'https://logo.clearbit.com/coursera.org'
+	]}
+/>
 
 <Summary
 	generating

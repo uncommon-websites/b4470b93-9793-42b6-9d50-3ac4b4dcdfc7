@@ -1,7 +1,7 @@
 export const CONFIG = {
-	companyName: "Company",
-	description: "Description",
-	image: "/og.png",
-	url: "https://example.com",
-	fontFamily: "Inter Variable"
+	companyName: "Uncommon",
+	description: "We build digital products that transform businesses.",
+	image: "/uncommon-og.png",
+	url: "https://unc.mn",
+	fontFamily: "Inter"
 };
