@@ -26,107 +26,112 @@
 />
 
 <Summary
-	generating
 	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	text="We help small and mid-sized businesses handle finances, payroll, and compliance in one simple platform. Clear costs, easy setup, and no extra hires needed."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
+			name: "Maria Delgado",
+			position: "Owner",
+			company: "Sunhouse Bakery",
+			quote: "Before we started using it, I was icing cakes until midnight most nights. Now, I’m home for dinner with my family—and still getting more done. It’s saved me hours every week.",
+			image: "/generated/image-a-hispanic-woman-the-bakery-owner-is-sta.webp"
+		},
+		{
+			name: "Faisal Khan",
 			position: "CTO",
-			company: "Tech Innovations",
-			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image:
-				"https://images.unsplash.com/photo-1571513722275-4b41940f54b8?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			company: "Helix Systems",
+			quote: "Using this platform cut our project risk in half. We’ve avoided costly last-minute bugs and surprise delays that used to derail our timelines. Now launches run smoother, and my engineering team finally has peace of mind to focus on building.",
+			image: "/generated/image-a-south-asian-man-the-cto-is-sitting-wit.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
-			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image:
-				"https://images.unsplash.com/photo-1600603405959-6d623e92445c?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-		},
-		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
-			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image:
-				"https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			name: "Curtis Rivers",
+			position: "Logistics Manager",
+			company: "Rapid Route Distribution",
+			quote: "We’re no longer burning through our transport budget—monthly costs are finally predictable. It’s like we found extra room in our margin with zero extra effort.",
+			image: "/generated/image-an-african-american-man-the-logistics-ma.webp"
 		}
 	]}
 />
 
 <Features
-	generating
 	title="Features"
-	subtitle="Some features"
+	subtitle="Productivity, reimagined for high-velocity teams"
 	features={[
 		{
-			title: "Streamlined Workflows",
-			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+			title: "Automate the busywork",
+			description: "Set rules once and let the platform handle recurring tasks, reminders, and approvals—so your team can focus on work that matters."
 		},
 		{
-			title: "Data Analysis",
-			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+			title: "Insights in real time",
+			description: "AI-powered dashboards track projects, blockers, and trends automatically—no manual updates needed."
 		},
 		{
-			title: "Secure Collaboration",
-			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+			title: "Collaboration without compromise",
+			description: "Control who sees what with role-based access and encrypted file sharing built to keep sensitive work confidential and secure."
+		},
+		{
+			title: "Customize everything",
+			description: "Every view, workflow, and dashboard adapts to how your team actually works—no coding required."
+		},
+		{
+			title: "Help, right when you need it",
+			description: "Live chat and hands-on onboarding ensure your team is never stuck and always supported."
+		},
+		{
+			title: "Built to scale with you",
+			description: "From 5 to 5,000 users, enjoy lightning-fast performance and uptime that keeps up with your growth."
 		}
 	]}
 />
 
 <UseCases
-	generating
 	title="Use Cases"
 	subtitle="Real-world applications for your business needs"
 	useCases={[
 		{
-			title: "Streamlined Workflows",
+			title: "Get payroll off your plate",
 			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings.",
-			image:
-				"https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+				"Handle paydays, tax filings, and year-end forms without stress. Our platform automates every step so owners never miss a deadline again.",
+			image: "/generated/image-small-business-owner-using-computer-payroll.webp",
 			link: {
-				href: "/use-cases/workflows",
+				href: "/use-cases/payroll-automation",
 				label: "Learn more"
 			}
 		},
 		{
-			title: "Data Analysis",
+			title: "One dashboard for every dollar",
 			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors.",
-			image:
-				"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2488&q=80",
+				"See all expenses, invoices, and budget trends in one place. Make smarter decisions on the fly without chasing down paperwork.",
+			image: "/generated/image-finance-manager-reviewing-dashboard-budget.webp",
 			link: {
-				href: "/use-cases/data-analysis",
-				label: "Explore analytics"
+				href: "/use-cases/financial-visibility",
+				label: "See the insights"
 			}
 		},
 		{
-			title: "Secure Collaboration",
+			title: "Stay compliant, stay carefree",
 			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption.",
-			image:
-				"https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+				"Local rules keep changing, but you’ll never worry about falling behind. Compliance is built-in—so audits don’t keep you up at night.",
+			image: "/generated/image-compliance-officer-checking-documents-smart.webp",
 			link: {
-				href: "/use-cases/collaboration",
-				label: "See security features"
+				href: "/use-cases/automatic-compliance",
+				label: "See how it works"
 			}
 		}
 	]}
 />
 
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction
+  title="Make your workday simpler"
+  subtitle="Switching is easy—and help is always here."
+  description="Automate payroll, compliance, and HR tasks—so you spend less time on admin and more on running your business. Switching is seamless, and our team is here to help every step of the way. Thousands of busy leaders already made the move."
+  imageSrc="/generated/image-a-cheerful-small-business-owner-standing.webp"
+  callsToAction={[
+    { href: '/get-started', label: 'Start free trial', variant: 'primary' },
+    { href: '/contact', label: 'Talk to a product expert', variant: 'secondary' }
+  ]}
+/>

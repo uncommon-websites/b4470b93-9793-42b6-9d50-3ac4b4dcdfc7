@@ -121,53 +121,57 @@
 	];
 
 	const employeeTestimonials = [
-		{
-			name: "Michael Chen",
-			position: "Senior Developer",
-			company: "Engineering Team",
-			quote:
-				"Working here has given me the opportunity to tackle challenging problems while maintaining a healthy work-life balance. The team culture is supportive and collaborative.",
-			image:
-				"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "Priya Sharma",
-			position: "Product Designer",
-			company: "Design Team",
-			quote:
-				"The creative freedom and opportunity to influence product decisions makes this the best place I've ever worked. I'm constantly learning and growing.",
-			image:
-				"https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "Marcus Johnson",
-			position: "Marketing Lead",
-			company: "Marketing Team",
-			quote:
-				"I joined three years ago and have grown tremendously. The leadership truly invests in your development and the work environment is both challenging and supportive.",
-			image:
-				"https://images.unsplash.com/photo-1531384441138-2736e62e0919?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		}
-	];
+  {
+    name: "Michael Chen",
+    position: "Senior developer",
+    company: "engineering team",
+    quote:
+      "I'm constantly impressed by the culture we've built. As a senior developer, I’ve seen firsthand how open people are to sharing ideas and lending a hand. Whether I'm pairing on a tough bug or brainstorming with design, I’ve always felt supported and heard.",
+    image:
+      "/generated/image-a-senior-asian-male-developer-smiling-wa.webp"
+  },
+  {
+    name: "Priya Sharma",
+    position: "Product designer",
+    company: "design team",
+    quote:
+      "The learning curve has been steep—but that’s what I wanted. I've had the chance to shadow senior designers, lead user research sessions, and even attend an external design sprint. The company really invests in your growth if you show up hungry to learn.",
+    image:
+      "/generated/image-a-south-asian-female-product-designer-wo.webp"
+  },
+  {
+    name: "Marcus Johnson",
+    position: "Marketing lead",
+    company: "marketing team",
+    quote:
+      "This role has stretched me in ways I didn’t expect. I came in with a background in content and now lead integrated marketing campaigns. The feedback loops are fast, the ownership is real, and the people truly want you to grow.",
+    image:
+      "/generated/image-a-black-male-marketing-lead-engaged-in-a.webp"
+  }
+];
 
 	const processSteps = [
-		{
-			step: 1,
-			title: "Apply",
-			description:
-				"Submit your application through our careers portal with your resume and portfolio."
-		},
-		{
-			step: 2,
-			title: "Interview",
-			description: "Meet with our team to discuss your experience, skills, and career aspirations."
-		},
-		{
-			step: 3,
-			title: "Welcome aboard",
-			description: "Join our team and start your journey building the future with us."
-		}
-	];
+  {
+    step: 1,
+    title: "Apply",
+    description: "Submit your resume or LinkedIn URL—no lengthy cover letter required."
+  },
+  {
+    step: 2,
+    title: "Meet the team",
+    description: "If there's a fit, you'll meet with a few folks across functions for short 30-minute conversations."
+  },
+  {
+    step: 3,
+    title: "Work sample",
+    description: "You’ll complete a short take-home assignment to showcase how you approach real-world work."
+  },
+  {
+    step: 4,
+    title: "Final chat",
+    description: "We’ll wrap with a final conversation to calibrate expectations, answer questions, and make sure we’re aligned."
+  }
+];
 
 	const values = [
 		{
@@ -191,23 +195,54 @@
 <!-- Hero Section -->
 
 <SecondaryHero
-	title="Join our team of innovators"
-	subtitle="We're looking for passionate people to help us build the future of digital experiences. Discover your next opportunity with us."
+	title="Create with heart. Grow with purpose."
+	subtitle="A place to thrive, feel supported, and make real impact—together."
+	imageSrc="/generated/image-a-group-of-diverse-happy-employees-colla.webp"
 />
 
 <!-- Why Join Us Section -->
 <section class={SECTION_BASE_CLASSES}>
-	<SectionHeader title="Why join us?" subtitle="Build your career while making an impact" />
+	<SectionHeader title="Why join us?" subtitle="Work that actually matters. Grow fast, together." />
 
-	<div class="mt-16 grid gap-4 md:grid-cols-3">
-		{#each benefits as benefit}
-			<Card {...benefit} />
-		{/each}
-	</div>
+<div class="mt-16 space-y-6">
+  <p class="text-body">
+    We're solving real problems for real customers. Your work won't sit on a shelfit'll go live and make a measurable impact.
+  </p>
+  <p class="text-body">
+    We invest deeply in your development: learning budgets, mentorship, and a team built to challenge and support each other.
+  </p>
+  <p class="text-body">
+    We're remote-friendly with flexible hours. We trust you to do your best work, your way.
+  </p>
+  <p class="text-body">
+    Were building a sustainable business with clear values, healthy compensation, and benefits that let you focus on doing great work.
+  </p>
+</div>
+<div class="mt-12 grid gap-4 md:grid-cols-3">
+	{#each benefits as benefit}
+		<Card {...benefit} />
+	{/each}
+</div>
 </section>
 
 <!-- Culture Section -->
-<Culture {values} />
+<Culture values={[
+  {
+    icon: IconHeart,
+    title: 'Bias for action',
+    description: 'We move quickly and prioritize progress over perfectiondone is better than perfect.'
+  },
+  {
+    icon: IconUsers,
+    title: 'Low ego, high output',
+    description: 'We work hard to separate ideas from identity. The best idea wins, no matter where it comes from.'
+  },
+  {
+    icon: IconGlobe,
+    title: 'Default to transparency',
+    description: 'From strategy to feedback, we believe good decisions come from shared contextnot closed rooms.'
+  }
+]} />
 
 <Testimonials testimonials={employeeTestimonials} />
 

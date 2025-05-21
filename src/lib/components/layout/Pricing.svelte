@@ -35,116 +35,127 @@ Please update features according to the company's product offering. Do not remov
 
 	// Props
 	const {
-		title = "Simple, transparent pricing",
-		subtitle = "Choose the plan that works best for your needs",
-		tierNames = ["Starter", "Pro", "Enterprise"],
+		title = "Smarter workflows for modern teams",
+		subtitle = "A platform built for fast-moving businesses in healthcare, finance, tech, and education" ,
+		tierNames = ["Starter", "Growth", "Enterprise"],
 		features = [
 			{
-				name: "Projects",
+				name: "Seats",
 				tiers: {
-					Starter: "5",
-					Pro: "Unlimited",
+					Starter: "Up to 3",
+					Growth: "Up to 50",
 					Enterprise: "Unlimited"
 				}
 			},
 			{
-				name: "Team members",
+				name: "Integrations",
 				tiers: {
-					Starter: "1",
-					Pro: "10",
-					Enterprise: "Unlimited"
+					Starter: "Google, Slack",
+					Growth: "Zapier, HubSpot, Salesforce",
+					Enterprise: "Custom integrations"
+				}
+			},
+			{
+				name: "Automations",
+				tiers: {
+					Starter: "Basic",
+					Growth: "Advanced",
+					Enterprise: "Fully customizable"
+				}
+			},
+			{
+				name: "Analytics",
+				tiers: {
+					Starter: false,
+					Growth: "Advanced reporting",
+					Enterprise: "Enterprise dashboard"
 				}
 			},
 			{
 				name: "Storage",
 				tiers: {
-					Starter: "1GB",
-					Pro: "10GB",
-					Enterprise: "Unlimited"
+					Starter: "1 GB",
+					Growth: "50 GB",
+					Enterprise: "1 TB"
+				}
+			},
+			{
+				name: "SSO",
+				tiers: {
+					Starter: false,
+					Growth: "OAuth 2.0",
+					Enterprise: "SAML"
 				}
 			},
 			{
 				name: "API access",
 				tiers: {
 					Starter: false,
-					Pro: true,
-					Enterprise: true
-				}
-			},
-			{
-				name: "Custom domains",
-				tiers: {
-					Starter: false,
-					Pro: true,
-					Enterprise: true
-				}
-			},
-			{
-				name: "Analytics",
-				tiers: {
-					Starter: "Basic",
-					Pro: "Advanced",
-					Enterprise: "Advanced"
+					Growth: true,
+					Enterprise: "Advanced + custom support"
 				}
 			},
 			{
 				name: "Support response time",
 				tiers: {
-					Starter: "24 hours",
-					Pro: "4 hours",
-					Enterprise: "1 hour"
+					Starter: "Community",
+					Growth: "Within 8 hours",
+					Enterprise: "1-hour SLA"
 				}
 			},
 			{
-				name: "Dedicated account manager",
+				name: "Onboarding",
 				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: true
+					Starter: "Self-serve",
+					Growth: "Guided setup",
+					Enterprise: "Dedicated onboarding"
 				}
 			},
 			{
-				name: "SLA",
+				name: "Compliance",
 				tiers: {
 					Starter: false,
-					Pro: false,
-					Enterprise: "99.9%"
+					Growth: "SOC 2 (on request)",
+					Enterprise: "SOC 2, HIPAA, GDPR"
 				}
 			}
 		],
 		tiers = [
 			{
 				name: "Starter",
-				monthlyPrice: 9.99,
-				yearlyPrice: 7.99, // 20% savings
-				description: "Perfect for individuals and small projects",
+				monthlyPrice: 12,
+				yearlyPrice: 10, // 17% savings
+				description: "For individuals and small teams getting set up.",
 				features: [
-					"Up to 5 projects",
-					"Basic analytics",
-					"24-hour support response time",
-					"1GB storage"
+					"Up to 3 seats",
+					"Unlimited boards and tasks",
+					"Basic automations",
+					"Google & Slack integrations",
+					"Community support",
+					"1 GB storage"
 				],
 				cta: {
-					label: "Get started",
+					label: "Start for free",
 					href: "/signup?plan=starter"
 				}
 			},
 			{
-				name: "Pro",
-				monthlyPrice: 29.99,
-				yearlyPrice: 23.99, // 20% savings
-				description: "For growing teams and businesses",
+				name: "Growth",
+				monthlyPrice: 39,
+				yearlyPrice: 33, // 15% savings
+				description: "For scaling teams that need better coordination, automation, and insight.",
 				features: [
-					"Unlimited projects",
-					"Advanced analytics",
-					"4-hour support response time",
-					"10GB storage",
-					"Custom domains",
-					"Team collaboration tools"
+					"Up to 50 seats",
+					"Advanced workflows and permissions",
+					"Email support (8 hour response)",
+					"Zapier, HubSpot, Salesforce integrations",
+					"Advanced analytics and reporting",
+					"API access & SSO (OAuth)",
+					"50 GB storage"
 				],
 				cta: {
-					label: "Get started",
-					href: "/signup?plan=pro"
+					label: "Start trial",
+					href: "/signup?plan=growth"
 				},
 				highlight: true
 			},
@@ -152,15 +163,17 @@ Please update features according to the company's product offering. Do not remov
 				name: "Enterprise",
 				monthlyPrice: null,
 				yearlyPrice: null,
-				description: "For large organizations with specific needs",
+				description: "For large organizations with compliance needs, scale requirements, and dedicated support.",
 				features: [
-					"Everything in Pro",
-					"Dedicated account manager",
-					"1-hour support response time",
-					"Unlimited storage",
-					"Advanced security features",
-					"Custom integrations",
-					"99.9% uptime SLA"
+					"Unlimited seats",
+					"Premium integrations & custom workflows",
+					"Priority support & custom SLA",
+					"Dedicated onboarding & technical assistance",
+					"SSO (SAML)",
+					"Enterprise-grade security & audit logs",
+					"Data residency and compliance",
+					"1 TB storage",
+					"Custom API and integration support"
 				],
 				cta: {
 					label: "Contact sales",
